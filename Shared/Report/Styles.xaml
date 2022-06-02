@@ -1,0 +1,67 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:Shared.Report">
+    <!--  **************************************************************************************************  -->
+    <Style x:Key="BasicCellStyle" TargetType="TextBox">
+        <Setter Property="Foreground" Value="#ff12123c" />
+        <Setter Property="Padding" Value="1, 0, 2, 0" />
+        <Setter Property="Margin" Value="0 0 0 0" />
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="FontSize" Value="11pt" />
+        <Setter Property="TextAlignment" Value="Center" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="FontWeight" Value="Light" />
+        <Setter Property="FontStyle" Value="Normal" />
+        <Setter Property="TextWrapping" Value="Wrap" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+    <Style x:Key="IntCellStyle" BasedOn="{StaticResource BasicCellStyle}" TargetType="TextBox">
+        <Setter Property="FontFamily" Value="Century Gothic" />
+        <Setter Property="TextAlignment" Value="Right" />
+        <Setter Property="Margin" Value="1, 0, 1, 0" />
+    </Style>
+    <Style x:Key="NullIntCellStyle" BasedOn="{StaticResource IntCellStyle}" TargetType="TextBox">
+        <Setter Property="Background" Value="#ffc00000" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+    <Style x:Key="StringCellStyle" BasedOn="{StaticResource BasicCellStyle}" TargetType="TextBox">
+        <Setter Property="Padding" Value="1, 0, 1, 0" />
+    </Style>
+    <Style x:Key="NullStringCellStyle" BasedOn="{StaticResource StringCellStyle}" TargetType="TextBox">
+        <Setter Property="Background" Value="#ffc00000" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+    <Style x:Key="HeaderCellStyle" BasedOn="{StaticResource BasicCellStyle}" TargetType="TextBox">
+        <Setter Property="Foreground" Value="#FF000000" />
+        <Setter Property="Margin" Value="0, 0, 0, 0" />
+    </Style>
+    <Style x:Key="HeaderNumbersCellStyle" BasedOn="{StaticResource BasicCellStyle}" TargetType="TextBox">
+        <Setter Property="Foreground" Value="#FF000000" />
+        <Setter Property="Padding" Value="0, 0, 0, 0" />
+        <Setter Property="FontSize" Value="10pt" />
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+    <Style x:Key="TableHeaderCellStyle" BasedOn="{StaticResource BasicCellStyle}" TargetType="TextBox">
+        <Setter Property="Margin" Value="0 10" />
+        <Setter Property="FontFamily" Value="Cambria" />
+        <Setter Property="FontSize" Value="14pt" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="FontStyle" Value="Italic" />
+    </Style>
+    <!--  ********************  СВОД ********************  -->
+    <Style x:Key="StringSummaryCellStyle" BasedOn="{StaticResource BasicCellStyle}" TargetType="TextBox">
+        <Setter Property="Foreground" Value="#FF00004B" />
+        <Setter Property="TextAlignment" Value="Right" />
+        <Setter Property="HorizontalAlignment" Value="Right" />
+    </Style>
+    <Style x:Key="IntSummaryCellStyle" BasedOn="{StaticResource BasicCellStyle}" TargetType="TextBox">
+        <Setter Property="Foreground" Value="#FF00004B" />
+        <Setter Property="FontFamily" Value="Century Gothic" />
+        <Setter Property="FontSize" Value="10pt" />
+        <Setter Property="FontWeight" Value="Normal" />
+        <Setter Property="FontStyle" Value="Italic" />
+        <Setter Property="TextAlignment" Value="Left" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+    </Style>
+</ResourceDictionary>

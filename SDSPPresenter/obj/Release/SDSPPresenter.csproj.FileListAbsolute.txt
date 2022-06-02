@@ -1,0 +1,5 @@
+d:\Developer\SDSP\DataBinding\bin\Release\SDSPPresenter.dll
+d:\Developer\SDSP\DataBinding\SDSPPresenter\obj\Release\SDSPPresenter.dll
+d:\Developer\SDSP\DataBinding\SDSPPresenter\obj\Release\SDSPPresenter.pdb
+d:\Developer\SDSP\DataBinding\bin\Release\SDSPPresenter.pdb
+D:\Developer\SDSP\DataBinding\SDSPPresenter\obj\Release\SDSPPresenter.csprojResolveAssemblyReference.cache

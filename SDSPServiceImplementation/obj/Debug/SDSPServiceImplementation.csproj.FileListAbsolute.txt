@@ -1,0 +1,38 @@
+D:\Developer\SDSP\WpfApplication1\bin\Debug\SDSPServiceImplementation.dll
+D:\Developer\SDSP\WpfApplication1\bin\Debug\SDSPServiceImplementation.pdb
+D:\Developer\SDSP\WpfApplication1\SDSPServiceImplementation\obj\Debug\SDSPServiceImplementation.csprojResolveAssemblyReference.cache
+D:\Developer\SDSP\WpfApplication1\SDSPServiceImplementation\obj\Debug\SDSPServiceImplementation.dll
+D:\Developer\SDSP\WpfApplication1\SDSPServiceImplementation\obj\Debug\SDSPServiceImplementation.pdb
+D:\Developer\SDSP\WpfApplication1\SDSPServiceImplementation\obj\Debug\SDSPServiceImplementation.Properties.Resources.resources
+D:\Developer\SDSP\WpfApplication1\SDSPServiceImplementation\obj\Debug\SDSPServiceImplementation.csproj.GenerateResource.Cache
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\bin\Debug\SDSPServiceImplementation.dll
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\bin\Debug\SDSPServiceImplementation.pdb
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\SDSPServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\SDSPServiceImplementation\obj\Debug\SDSPServiceImplementation.Properties.Resources.resources
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\SDSPServiceImplementation\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\SDSPServiceImplementation\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\SDSPServiceImplementation\obj\Debug\SDSPServiceImplementation.dll
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\SDSPServiceImplementation\obj\Debug\SDSPServiceImplementation.pdb
+b:\Developer\SDSP\DataBinding\bin\Debug\SDSPServiceImplementation.dll
+b:\Developer\SDSP\DataBinding\bin\Debug\SDSPServiceImplementation.pdb
+b:\Developer\SDSP\DataBinding\SDSPServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+b:\Developer\SDSP\DataBinding\SDSPServiceImplementation\obj\Debug\SDSPServiceImplementation.Properties.Resources.resources
+b:\Developer\SDSP\DataBinding\SDSPServiceImplementation\obj\Debug\GenerateResource.read.1.tlog
+b:\Developer\SDSP\DataBinding\SDSPServiceImplementation\obj\Debug\GenerateResource.write.1.tlog
+b:\Developer\SDSP\DataBinding\SDSPServiceImplementation\obj\Debug\SDSPServiceImplementation.dll
+b:\Developer\SDSP\DataBinding\SDSPServiceImplementation\obj\Debug\SDSPServiceImplementation.pdb
+d:\Developer\SDSP\DataBinding\bin\Debug\SDSPServiceImplementation.dll
+d:\Developer\SDSP\DataBinding\bin\Debug\SDSPServiceImplementation.pdb
+d:\Developer\SDSP\DataBinding\SDSPServiceImplementation\obj\Debug\SDSPServiceImplementation.Properties.Resources.resources
+d:\Developer\SDSP\DataBinding\SDSPServiceImplementation\obj\Debug\SDSPServiceImplementation.dll
+d:\Developer\SDSP\DataBinding\SDSPServiceImplementation\obj\Debug\SDSPServiceImplementation.pdb
+D:\Developer\SDSP\DataBinding\SDSPServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+D:\Developer\SDSP\DataBinding\SDSPServiceImplementation\obj\Debug\GenerateResource.read.1.tlog
+D:\Developer\SDSP\DataBinding\SDSPServiceImplementation\obj\Debug\GenerateResource.write.1.tlog
+z:\Developer\SDSP\bin\Debug\SDSPServiceImplementation.dll
+z:\Developer\SDSP\bin\Debug\SDSPServiceImplementation.pdb
+z:\Developer\SDSP\SDSPServiceImplementation\obj\Debug\SDSPServiceImplementation.csprojResolveAssemblyReference.cache
+z:\Developer\SDSP\SDSPServiceImplementation\obj\Debug\SDSPServiceImplementation.Properties.Resources.resources
+z:\Developer\SDSP\SDSPServiceImplementation\obj\Debug\SDSPServiceImplementation.csproj.GenerateResource.Cache
+z:\Developer\SDSP\SDSPServiceImplementation\obj\Debug\SDSPServiceImplementation.dll
+z:\Developer\SDSP\SDSPServiceImplementation\obj\Debug\SDSPServiceImplementation.pdb

@@ -1,0 +1,184 @@
+﻿<UserControl x:Class="DataBinding.UIControls.CustomTreeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:uiControls="clr-namespace:DataBinding.UIControls"
+             d:DesignHeight="150"
+             d:DesignWidth="400"
+             mc:Ignorable="d">
+    <UserControl.Resources>
+        <Style x:Key="TreeViewItemFocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border>
+                            <Rectangle Margin="0,0,0,0"
+                                       Opacity="100"
+                                       Stroke="Black"
+                                       StrokeDashArray="1 2"
+                                       StrokeThickness="1" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="ExpandCollapseToggleStyle" TargetType="{x:Type ToggleButton}">
+            <Setter Property="Focusable" Value="False" />
+            <Setter Property="Width" Value="18" />
+            <Setter Property="Height" Value="18" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Border Width="16" Height="16" Background="#00FFFFFF" Padding="4,4,4,4">
+                            <Path Name="ExpandPath" Fill="#FFFFFFFF" Stroke="#FF262626">
+                                <Path.Data>
+                                    <PathGeometry Figures="M0,0L0,8L8,0z" />
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="135" CenterX="4" CenterY="4" />
+                                </Path.RenderTransform>
+                            </Path>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="UIElement.IsMouseOver" Value="True">
+                                <Setter TargetName="ExpandPath" Property="Shape.Stroke" Value="#FF1BBBFA" />
+                                <Setter TargetName="ExpandPath" Property="Shape.Fill" Value="#FFFFFFFF" />
+                            </Trigger>
+                            <Trigger Property="ToggleButton.IsChecked" Value="True">
+                                <Setter TargetName="ExpandPath" Property="UIElement.RenderTransform">
+                                    <Setter.Value>
+                                        <RotateTransform Angle="225" CenterX="3" CenterY="3" />
+                                    </Setter.Value>
+                                </Setter>
+                                <Setter TargetName="ExpandPath" Property="Shape.Fill" Value="#FFFFFFFF" />
+                                <Setter TargetName="ExpandPath" Property="Shape.Stroke" Value="#FF262626" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="{x:Type TreeViewItem}">
+            <Setter Property="HorizontalContentAlignment" Value="{Binding Path=HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" />
+            <Setter Property="VerticalContentAlignment" Value="{Binding Path=VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" />
+            <Setter Property="Padding" Value="1,0,0,0" />
+            <!--  Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" /  -->
+            <Setter Property="FocusVisualStyle" Value="{StaticResource TreeViewItemFocusVisual}" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TreeViewItem">
+                        <ControlTemplate.Resources>
+                            <uiControls:LeftMarginMultiplierConverter x:Key="lengthConverter" Length="18" />
+                            <LinearGradientBrush x:Key="ListItemSelectedFill" StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Offset="0" Color="#9CB7D7" />
+                                <GradientStop Offset="1" Color="#6984A4" />
+                            </LinearGradientBrush>
+                            <LinearGradientBrush x:Key="ListItemSelectedInactiveFill" StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Offset="0" Color="#C8CCD3" />
+                                <GradientStop Offset="1" Color="#979CA4" />
+                            </LinearGradientBrush>
+                            <LinearGradientBrush x:Key="ListItemHoverFill" StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Offset="0" Color="#E3E8EF" />
+                                <GradientStop Offset="1" Color="#C0C5CE" />
+                            </LinearGradientBrush>
+                            <LinearGradientBrush x:Key="ListItemSelectedHoverFill" StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Offset="0" Color="#AFCBEA" />
+                                <GradientStop Offset="1" Color="#7F9FC4" />
+                            </LinearGradientBrush>
+                            <SolidColorBrush x:Key="ListItemSelectedFillText" Color="White" />
+                            <SolidColorBrush x:Key="ListItemSelectedInactiveFillText" Color="WhiteSmoke" />
+                        </ControlTemplate.Resources>
+                        <StackPanel>
+                            <Border x:Name="Bd"
+                                    Margin="0"
+                                    HorizontalAlignment="Stretch"
+                                    Background="Transparent"
+                                    SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}">
+                                <Border x:Name="InnerBorder" BorderThickness="1" CornerRadius="4" Padding="0 0 0 2">
+                                    <Grid Margin="{Binding Converter={StaticResource lengthConverter}, RelativeSource={RelativeSource TemplatedParent}}">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="18" />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+                                        <ToggleButton x:Name="Expander" ClickMode="Press" IsChecked="{Binding Path=IsExpanded, RelativeSource={RelativeSource TemplatedParent}}" Style="{StaticResource ExpandCollapseToggleStyle}" />
+
+                                        <ContentPresenter x:Name="PART_Header" Grid.Column="1" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" ContentSource="Header" />
+                                    </Grid>
+                                </Border>
+                            </Border>
+                            <ItemsPresenter x:Name="ItemsHost" />
+                        </StackPanel>
+
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsExpanded" Value="false">
+                                <Setter TargetName="ItemsHost" Property="Visibility" Value="Collapsed" />
+                            </Trigger>
+                            <Trigger Property="HasItems" Value="false">
+                                <Setter TargetName="Expander" Property="Visibility" Value="Hidden" />
+                            </Trigger>
+                            <Trigger SourceName="Bd" Property="IsMouseOver" Value="true">
+                                <Setter TargetName="InnerBorder" Property="Background" Value="{StaticResource ListItemHoverFill}" />
+                                <Setter TargetName="InnerBorder" Property="BorderBrush" Value="#AAFFFFFF" />
+                            </Trigger>
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsSelected" Value="true" />
+                                    <Condition SourceName="Bd" Property="IsMouseOver" Value="true" />
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="InnerBorder" Property="Background" Value="{StaticResource ListItemSelectedHoverFill}" />
+                            </MultiTrigger>
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="HasHeader" Value="false" />
+                                    <Condition Property="Width" Value="Auto" />
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="PART_Header" Property="MinWidth" Value="75" />
+                            </MultiTrigger>
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="HasHeader" Value="false" />
+                                    <Condition Property="Height" Value="Auto" />
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="PART_Header" Property="MinHeight" Value="19" />
+                            </MultiTrigger>
+                            <Trigger Property="IsSelected" Value="true">
+                                <Setter TargetName="InnerBorder" Property="Panel.Background" Value="{StaticResource ListItemSelectedFill}" />
+                                <Setter TargetName="PART_Header" Property="TextElement.Foreground" Value="{StaticResource ListItemSelectedFillText}" />
+                                <Setter TargetName="PART_Header" Property="TextElement.FontWeight" Value="Bold" />
+                                <Setter TargetName="InnerBorder" Property="BorderBrush" Value="#FFFFFFFF" />
+                            </Trigger>
+
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsSelected" Value="true" />
+                                    <Condition Property="IsSelectionActive" Value="false" />
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="InnerBorder" Property="Panel.Background" Value="{StaticResource ListItemSelectedInactiveFill}" />
+                                <Setter TargetName="PART_Header" Property="TextElement.Foreground" Value="{StaticResource ListItemSelectedInactiveFillText}" />
+                                <Setter TargetName="InnerBorder" Property="BorderBrush" Value="#80FFFFFF" />
+                            </MultiTrigger>
+                            <Trigger Property="UIElement.IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </UserControl.Resources>
+    <Grid>
+        <TreeView Background="#DEE5EF">
+            <TreeViewItem x:Name="Tree1Item1" Header="Test1">
+                <TreeViewItem Header="1test1" />
+                <TreeViewItem Header="2test2" />
+            </TreeViewItem>
+            <TreeViewItem Header="Test2" />
+        </TreeView>
+    </Grid>
+</UserControl>

@@ -1,0 +1,18 @@
+C:\Projects\ExcelWrapper\bin\Release\ExcelWrapper.dll
+C:\Projects\ExcelWrapper\bin\Release\ExcelWrapper.pdb
+C:\Projects\ExcelWrapper\obj\Release\ResolveAssemblyReference.cache
+C:\Projects\ExcelWrapper\obj\Release\ExcelWrapper.csproj.ResolveComReference.cache
+C:\Projects\ExcelWrapper\obj\Release\ExcelWrapper.dll
+C:\Projects\ExcelWrapper\obj\Release\ExcelWrapper.pdb
+C:\Documents and Settings\AOgunsanya\My Documents\Projects\ExcelWrapper\bin\Release\ExcelWrapper.dll
+C:\Documents and Settings\AOgunsanya\My Documents\Projects\ExcelWrapper\bin\Release\ExcelWrapper.pdb
+C:\Documents and Settings\AOgunsanya\My Documents\Projects\ExcelWrapper\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\AOgunsanya\My Documents\Projects\ExcelWrapper\obj\Release\ExcelWrapper.csproj.ResolveComReference.cache
+C:\Documents and Settings\AOgunsanya\My Documents\Projects\ExcelWrapper\obj\Release\ExcelWrapper.dll
+C:\Documents and Settings\AOgunsanya\My Documents\Projects\ExcelWrapper\obj\Release\ExcelWrapper.pdb
+d:\Developer\SDSP\DataBinding\bin\Release\ExcelWrapper.dll
+d:\Developer\SDSP\DataBinding\bin\Release\ExcelWrapper.pdb
+d:\Developer\SDSP\DataBinding\ExcelWrapperDotNet\obj\Release\ResolveAssemblyReference.cache
+d:\Developer\SDSP\DataBinding\ExcelWrapperDotNet\obj\Release\ExcelWrapper.csproj.ResolveComReference.cache
+d:\Developer\SDSP\DataBinding\ExcelWrapperDotNet\obj\Release\ExcelWrapper.dll
+d:\Developer\SDSP\DataBinding\ExcelWrapperDotNet\obj\Release\ExcelWrapper.pdb

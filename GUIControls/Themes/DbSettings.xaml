@@ -1,0 +1,126 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:conv="clr-namespace:GUIControls.Core.Converters"
+                    xmlns:local="clr-namespace:GUIControls"
+                    xmlns:themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/GUIControls;component/Themes/Generic/Common.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <conv:InverseBoolConverter x:Key="InverseBoolConverter" />
+    <conv:ObjectToVisiblityConverter x:Key="ObjectToVisiblityConverter" />
+
+    <Style TargetType="{x:Type local:DbSettings}">
+        <Setter Property="IsTabStop" Value="True" />
+        <Setter Property="Padding" Value="1 0" />
+        <Setter Property="Width" Value="32" />
+        <Setter Property="Height" Value="32" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:DbSettings}">
+                    <Grid x:Name="MainGrid" SnapsToDevicePixels="True">
+                        <ToggleButton x:Name="PART_DropDownButton"
+                                      HorizontalContentAlignment="Center"
+                                      VerticalContentAlignment="Center"
+                                      IsChecked="{Binding IsOpen,
+                                                          RelativeSource={RelativeSource TemplatedParent},
+                                                          Mode=TwoWay}"
+                                      IsHitTestVisible="{Binding IsOpen,
+                                                                 RelativeSource={RelativeSource TemplatedParent},
+                                                                 Converter={StaticResource InverseBoolConverter}}"
+                                      Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
+                            <Image Source="/GUIControls;component/Resources/database-settings-icon.png" Stretch="None" ToolTip="{TemplateBinding ToolTip}" />
+                        </ToggleButton>
+
+                        <Popup x:Name="PART_Popup"
+                               MinWidth="100"
+                               AllowsTransparency="True"
+                               Focusable="False"
+                               HorizontalOffset="1"
+                               IsOpen="{Binding IsChecked,
+                                                ElementName=PART_DropDownButton}"
+                               Placement="Bottom"
+                               StaysOpen="False"
+                               ToolTip="{x:Null}"
+                               VerticalOffset="0">
+                            <themes:SystemDropShadowChrome Margin="2">
+                                <Border Background="{StaticResource PopupBackgroundBrush}" BorderBrush="{StaticResource PopupDarkBorderBrush}" BorderThickness="1">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition />
+                                            <RowDefinition />
+                                            <RowDefinition />
+                                            <RowDefinition />
+                                            <RowDefinition />
+                                            <RowDefinition Height="5" />
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Grid.Row="0"
+                                                   Grid.Column="0"
+                                                   Margin="2 2"
+                                                   FontWeight="Light"
+                                                   TextAlignment="Left">
+                                            Имя сервера
+                                        </TextBlock>
+                                        <TextBlock Grid.Row="1"
+                                                   Grid.Column="0"
+                                                   Margin="2 2"
+                                                   FontWeight="Light"
+                                                   TextAlignment="Left">
+                                            Каталог
+                                        </TextBlock>
+                                        <TextBlock Grid.Row="2"
+                                                   Grid.Column="0"
+                                                   Margin="2 2"
+                                                   FontWeight="Light"
+                                                   TextAlignment="Left">
+                                            Имя пользователя
+                                        </TextBlock>
+                                        <TextBlock Grid.Row="3"
+                                                   Grid.Column="0"
+                                                   Margin="2 2"
+                                                   FontWeight="Light"
+                                                   TextAlignment="Left">
+                                            Пароль
+                                        </TextBlock>
+                                        <TextBlock Grid.Row="4"
+                                                   Grid.Column="0"
+                                                   Margin="2 2"
+                                                   FontWeight="Light"
+                                                   TextAlignment="Left">
+                                            Имя базы данных
+                                        </TextBlock>
+
+                                        <TextBox Grid.Row="0" Grid.Column="1" Margin="2 2" Text="{Binding Path=ServerAddress}" />
+                                        <TextBox Grid.Row="1" Grid.Column="1" Margin="2 2" Text="{Binding Path=ServerCatalog, TargetNullValue=[нет значения]}" />
+                                        <TextBox Grid.Row="2" Grid.Column="1" Margin="2 2" Text="{Binding Path=UserName, TargetNullValue=[нет значения]}" />
+                                        <TextBox Grid.Row="3" Grid.Column="1" Margin="2 2" Text="{Binding Path=UserPassword, TargetNullValue=[нет значения]}" />
+                                        <TextBox Grid.Row="4" Grid.Column="1" Margin="2 2" Text="{Binding Path=DBName, TargetNullValue=[нет значения]}" />
+
+                                        <Button Name="btnOK"
+                                                Grid.Row="6"
+                                                Grid.Column="0"
+                                                Margin="3"
+                                                Content="Готово" />
+                                        <Button Name="btnCancel"
+                                                Grid.Row="6"
+                                                Grid.Column="1"
+                                                Margin="3"
+                                                Content="Отменить"
+                                                IsDefault="True" />
+                                    </Grid>
+                                </Border>
+                            </themes:SystemDropShadowChrome>
+                        </Popup>
+                    </Grid>
+                    <ControlTemplate.Triggers />
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

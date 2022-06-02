@@ -1,0 +1,86 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <LinearGradientBrush x:Key="CustomSplitterRectanglesBrush" StartPoint="0,0" EndPoint="0,1">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Offset="0" Color="#FFE3EFFF" />
+            <GradientStop Offset="1" Color="#DEE2EA" />
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+
+    <Style x:Key="CustomSplitterStyle">
+        <Setter Property="Control.Focusable" Value="false" />
+        <Setter Property="Control.Padding" Value="7,7,7,7" />
+        <Setter Property="Control.Margin" Value="2,0,0,0" />
+        <Setter Property="Control.Width" Value="5" />
+        <Setter Property="Control.Height" Value="23" />
+        <Setter Property="Control.HorizontalAlignment" Value="Stretch" />
+        <Setter Property="Control.VerticalAlignment" Value="Center" />
+        <Setter Property="Control.Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Canvas>
+                        <Rectangle Canvas.Left="0"
+                                   Canvas.Top="1"
+                                   Width="2"
+                                   Height="2"
+                                   Fill="{StaticResource CustomSplitterRectanglesBrush}" />
+                        <Rectangle Canvas.Left="0"
+                                   Canvas.Top="5"
+                                   Width="2"
+                                   Height="2"
+                                   Fill="{StaticResource CustomSplitterRectanglesBrush}" />
+                        <Rectangle Canvas.Left="0"
+                                   Canvas.Top="9"
+                                   Width="2"
+                                   Height="2"
+                                   Fill="{StaticResource CustomSplitterRectanglesBrush}" />
+                        <Rectangle Canvas.Left="0"
+                                   Canvas.Top="13"
+                                   Width="2"
+                                   Height="2"
+                                   Fill="{StaticResource CustomSplitterRectanglesBrush}" />
+                        <Rectangle Canvas.Left="0"
+                                   Canvas.Top="17"
+                                   Width="2"
+                                   Height="2"
+                                   Fill="{StaticResource CustomSplitterRectanglesBrush}" />
+                        <Rectangle Canvas.Left="0"
+                                   Canvas.Top="21"
+                                   Width="2"
+                                   Height="2"
+                                   Fill="{StaticResource CustomSplitterRectanglesBrush}" />
+                        <Rectangle Canvas.Left="0"
+                                   Canvas.Top="0"
+                                   Width="2"
+                                   Height="2"
+                                   Fill="#FFA4A8AE" />
+                        <Rectangle Canvas.Left="0"
+                                   Canvas.Top="4"
+                                   Width="2"
+                                   Height="2"
+                                   Fill="#FFA4A8AE" />
+                        <Rectangle Canvas.Left="0"
+                                   Canvas.Top="8"
+                                   Width="2"
+                                   Height="2"
+                                   Fill="#FFA4A8AE" />
+                        <Rectangle Canvas.Left="0"
+                                   Canvas.Top="12"
+                                   Width="2"
+                                   Height="2"
+                                   Fill="#FFA4A8AE" />
+                        <Rectangle Canvas.Left="0"
+                                   Canvas.Top="16"
+                                   Width="2"
+                                   Height="2"
+                                   Fill="#FFA4A8AE" />
+                        <Rectangle Canvas.Left="0"
+                                   Canvas.Top="20"
+                                   Width="2"
+                                   Height="2"
+                                   Fill="#FFA4A8AE" />
+                    </Canvas>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

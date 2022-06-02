@@ -1,0 +1,27 @@
+D:\Developer\SDSP\WpfApplication1\SDSPServiceInterface\bin\Debug\SDSPServiceInterface.dll
+D:\Developer\SDSP\WpfApplication1\SDSPServiceInterface\bin\Debug\SDSPServiceInterface.pdb
+D:\Developer\SDSP\WpfApplication1\bin\Debug\SDSPServiceInterface.dll
+D:\Developer\SDSP\WpfApplication1\bin\Debug\SDSPServiceInterface.pdb
+D:\Developer\SDSP\WpfApplication1\SDSPServiceInterface\obj\Debug\SDSPServiceInterface.dll
+D:\Developer\SDSP\WpfApplication1\SDSPServiceInterface\obj\Debug\SDSPServiceInterface.pdb
+D:\Developer\SDSP\WpfApplication1\SDSPServiceInterface\obj\Debug\SDSPServiceInterface.csprojResolveAssemblyReference.cache
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\bin\Debug\SDSPServiceInterface.dll
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\bin\Debug\SDSPServiceInterface.pdb
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\SDSPServiceInterface\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\SDSPServiceInterface\obj\Debug\SDSPServiceInterface.dll
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\SDSPServiceInterface\obj\Debug\SDSPServiceInterface.pdb
+b:\Developer\SDSP\DataBinding\bin\Debug\SDSPServiceInterface.dll
+b:\Developer\SDSP\DataBinding\bin\Debug\SDSPServiceInterface.pdb
+b:\Developer\SDSP\DataBinding\SDSPServiceInterface\obj\Debug\ResolveAssemblyReference.cache
+b:\Developer\SDSP\DataBinding\SDSPServiceInterface\obj\Debug\SDSPServiceInterface.dll
+b:\Developer\SDSP\DataBinding\SDSPServiceInterface\obj\Debug\SDSPServiceInterface.pdb
+d:\Developer\SDSP\DataBinding\bin\Debug\SDSPServiceInterface.dll
+d:\Developer\SDSP\DataBinding\bin\Debug\SDSPServiceInterface.pdb
+d:\Developer\SDSP\DataBinding\SDSPServiceInterface\obj\Debug\SDSPServiceInterface.dll
+d:\Developer\SDSP\DataBinding\SDSPServiceInterface\obj\Debug\SDSPServiceInterface.pdb
+D:\Developer\SDSP\DataBinding\SDSPServiceInterface\obj\Debug\ResolveAssemblyReference.cache
+z:\Developer\SDSP\bin\Debug\SDSPServiceInterface.dll
+z:\Developer\SDSP\bin\Debug\SDSPServiceInterface.pdb
+z:\Developer\SDSP\SDSPServiceInterface\obj\Debug\SDSPServiceInterface.csprojResolveAssemblyReference.cache
+z:\Developer\SDSP\SDSPServiceInterface\obj\Debug\SDSPServiceInterface.dll
+z:\Developer\SDSP\SDSPServiceInterface\obj\Debug\SDSPServiceInterface.pdb

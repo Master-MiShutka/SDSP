@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AskueModelStoreContainer" CdmEntityContainer="AskueEntities">
+    <EntitySetMapping Name="CalcPoints">
+      <EntityTypeMapping TypeName="AskueModel.CalcPoints">
+        <MappingFragment StoreEntitySet="CalcPoints">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Collector_id" ColumnName="Collector_id" />
+          <ScalarProperty Name="Flat_id" ColumnName="Flat_id" />
+          <ScalarProperty Name="Personal_acc" ColumnName="Personal_acc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Channels">
+      <EntityTypeMapping TypeName="AskueModel.Channels">
+        <MappingFragment StoreEntitySet="Channels">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Type_ID" ColumnName="Type_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Channels_Type">
+      <EntityTypeMapping TypeName="AskueModel.Channels_Type">
+        <MappingFragment StoreEntitySet="Channels_Type">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Collectors">
+      <EntityTypeMapping TypeName="AskueModel.Collectors">
+        <MappingFragment StoreEntitySet="Collectors">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Collectors_Type_ID" ColumnName="Collectors_Type_ID" />
+          <ScalarProperty Name="Channel_ID" ColumnName="Channel_ID" />
+          <ScalarProperty Name="Collectors_ID" ColumnName="Collectors_ID" />
+          <ScalarProperty Name="NetAdress" ColumnName="NetAdress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Collectors_Statuses">
+      <EntityTypeMapping TypeName="AskueModel.Collectors_Statuses">
+        <MappingFragment StoreEntitySet="Collectors_Statuses">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Collector_id" ColumnName="Collector_id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="time" ColumnName="time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Collectors_Type">
+      <EntityTypeMapping TypeName="AskueModel.Collectors_Type">
+        <MappingFragment StoreEntitySet="Collectors_Type">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Manufacturer_ID" ColumnName="Manufacturer_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Counters">
+      <EntityTypeMapping TypeName="AskueModel.Counters">
+        <MappingFragment StoreEntitySet="Counters">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CalcPoint_ID" ColumnName="CalcPoint_ID" />
+          <ScalarProperty Name="Type_ID" ColumnName="Type_ID" />
+          <ScalarProperty Name="Serial" ColumnName="Serial" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="NetAdress" ColumnName="NetAdress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Counters_Statuses">
+      <EntityTypeMapping TypeName="AskueModel.Counters_Statuses">
+        <MappingFragment StoreEntitySet="Counters_Statuses">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Counter_id" ColumnName="Counter_id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Counters_type">
+      <EntityTypeMapping TypeName="AskueModel.Counters_type">
+        <MappingFragment StoreEntitySet="Counters_type">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Manufacturer_ID" ColumnName="Manufacturer_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FES">
+      <EntityTypeMapping TypeName="AskueModel.FES">
+        <MappingFragment StoreEntitySet="FES">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Region_ID" ColumnName="Region_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Flats">
+      <EntityTypeMapping TypeName="AskueModel.Flats">
+        <MappingFragment StoreEntitySet="Flats">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="House_ID" ColumnName="House_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Houses">
+      <EntityTypeMapping TypeName="AskueModel.Houses">
+        <MappingFragment StoreEntitySet="Houses">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Street_ID" ColumnName="Street_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indications">
+      <EntityTypeMapping TypeName="AskueModel.Indications">
+        <MappingFragment StoreEntitySet="Indications">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CalcPoint_ID" ColumnName="CalcPoint_ID" />
+          <ScalarProperty Name="Profile_ID" ColumnName="Profile_ID" />
+          <ScalarProperty Name="Ts" ColumnName="Ts" />
+          <ScalarProperty Name="Tr0" ColumnName="Tr0" />
+          <ScalarProperty Name="Tr1" ColumnName="Tr1" />
+          <ScalarProperty Name="Tr2" ColumnName="Tr2" />
+          <ScalarProperty Name="Tr3" ColumnName="Tr3" />
+          <ScalarProperty Name="Tr4" ColumnName="Tr4" />
+          <ScalarProperty Name="Da" ColumnName="Da" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LinkTempObjects">
+      <EntityTypeMapping TypeName="AskueModel.LinkTempObjects">
+        <MappingFragment StoreEntitySet="LinkTempObjects">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Template_id" ColumnName="Template_id" />
+          <ScalarProperty Name="Region_id" ColumnName="Region_id" />
+          <ScalarProperty Name="Fes_id" ColumnName="Fes_id" />
+          <ScalarProperty Name="Res_id" ColumnName="Res_id" />
+          <ScalarProperty Name="Place_id" ColumnName="Place_id" />
+          <ScalarProperty Name="Street_id" ColumnName="Street_id" />
+          <ScalarProperty Name="House_id" ColumnName="House_id" />
+          <ScalarProperty Name="Collector_id" ColumnName="Collector_id" />
+          <ScalarProperty Name="Flat_id" ColumnName="Flat_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Manufacturer">
+      <EntityTypeMapping TypeName="AskueModel.Manufacturer">
+        <MappingFragment StoreEntitySet="Manufacturer">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Places">
+      <EntityTypeMapping TypeName="AskueModel.Places">
+        <MappingFragment StoreEntitySet="Places">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Res_ID" ColumnName="Res_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Profile">
+      <EntityTypeMapping TypeName="AskueModel.Profile">
+        <MappingFragment StoreEntitySet="Profile">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Regions">
+      <EntityTypeMapping TypeName="AskueModel.Regions">
+        <MappingFragment StoreEntitySet="Regions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RES">
+      <EntityTypeMapping TypeName="AskueModel.RES">
+        <MappingFragment StoreEntitySet="RES">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Fes_ID" ColumnName="Fes_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceIndications">
+      <EntityTypeMapping TypeName="AskueModel.ServiceIndications">
+        <MappingFragment StoreEntitySet="ServiceIndications">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Id_Source_Point" ColumnName="Id_Source_Point" />
+          <ScalarProperty Name="Flag_Load" ColumnName="Flag_Load" />
+          <ScalarProperty Name="Ts" ColumnName="Ts" />
+          <ScalarProperty Name="Tr0" ColumnName="Tr0" />
+          <ScalarProperty Name="Tr1" ColumnName="Tr1" />
+          <ScalarProperty Name="Tr2" ColumnName="Tr2" />
+          <ScalarProperty Name="Tr3" ColumnName="Tr3" />
+          <ScalarProperty Name="Tr4" ColumnName="Tr4" />
+          <ScalarProperty Name="Da" ColumnName="Da" />
+          <ScalarProperty Name="Profile_ID" ColumnName="Profile_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServicePoints">
+      <EntityTypeMapping TypeName="AskueModel.ServicePoints">
+        <MappingFragment StoreEntitySet="ServicePoints">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Id_Source_Point" ColumnName="Id_Source_Point" />
+          <ScalarProperty Name="Id_current_Points_Base" ColumnName="Id_current_Points_Base" />
+          <ScalarProperty Name="Flag_Load" ColumnName="Flag_Load" />
+          <ScalarProperty Name="POINT_SN" ColumnName="POINT_SN" />
+          <ScalarProperty Name="POINT_METER" ColumnName="POINT_METER" />
+          <ScalarProperty Name="POINT_NAME" ColumnName="POINT_NAME" />
+          <ScalarProperty Name="POINT_REGION" ColumnName="POINT_REGION" />
+          <ScalarProperty Name="POINT_PLACE" ColumnName="POINT_PLACE" />
+          <ScalarProperty Name="POINT_ENTERPRISE" ColumnName="POINT_ENTERPRISE" />
+          <ScalarProperty Name="POINT_BRANCH" ColumnName="POINT_BRANCH" />
+          <ScalarProperty Name="POINT_STREET" ColumnName="POINT_STREET" />
+          <ScalarProperty Name="POINT_BUILDING" ColumnName="POINT_BUILDING" />
+          <ScalarProperty Name="POINT_ADDRESSNUMBER" ColumnName="POINT_ADDRESSNUMBER" />
+          <ScalarProperty Name="POINT_SUBSCRIBERTYPE_ID" ColumnName="POINT_SUBSCRIBERTYPE_ID" />
+          <ScalarProperty Name="POINT_SUBSCRIBERTYPE" ColumnName="POINT_SUBSCRIBERTYPE" />
+          <ScalarProperty Name="POINT_TYPE_ID" ColumnName="POINT_TYPE_ID" />
+          <ScalarProperty Name="POINT_TYPE" ColumnName="POINT_TYPE" />
+          <ScalarProperty Name="POINT_SOURCETYPE_ID" ColumnName="POINT_SOURCETYPE_ID" />
+          <ScalarProperty Name="POINT_SOURCETYPE" ColumnName="POINT_SOURCETYPE" />
+          <ScalarProperty Name="POINT_VERIFICATION_DATE" ColumnName="POINT_VERIFICATION_DATE" />
+          <ScalarProperty Name="POINT_VERIFICATION_INTERVAL" ColumnName="POINT_VERIFICATION_INTERVAL" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Streets">
+      <EntityTypeMapping TypeName="AskueModel.Streets">
+        <MappingFragment StoreEntitySet="Streets">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Place_ID" ColumnName="Place_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Templates">
+      <EntityTypeMapping TypeName="AskueModel.Templates">
+        <MappingFragment StoreEntitySet="Templates">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Period" ColumnName="Period" />
+          <ScalarProperty Name="Profile_id" ColumnName="Profile_id" />
+          <ScalarProperty Name="Begin_Time" ColumnName="Begin_Time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="z_Monthes">
+      <EntityTypeMapping TypeName="AskueModel.z_Monthes">
+        <MappingFragment StoreEntitySet="z_Monthes">
+          <ScalarProperty Name="PKEY" ColumnName="PKEY" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

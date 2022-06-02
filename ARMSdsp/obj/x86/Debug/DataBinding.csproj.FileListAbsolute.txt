@@ -1,0 +1,50 @@
+c:\documents and settings\трус михаил петрович\мои документы\visual studio 2010\Projects\DataBinding\DataBinding\bin\Debug\DataBinding.exe.config
+c:\documents and settings\трус михаил петрович\мои документы\visual studio 2010\Projects\DataBinding\DataBinding\bin\Debug\DataBinding.exe
+c:\documents and settings\трус михаил петрович\мои документы\visual studio 2010\Projects\DataBinding\DataBinding\bin\Debug\DataBinding.pdb
+c:\documents and settings\трус михаил петрович\мои документы\visual studio 2010\Projects\DataBinding\DataBinding\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\трус михаил петрович\мои документы\visual studio 2010\Projects\DataBinding\DataBinding\obj\x86\Debug\MainWindow.baml
+c:\documents and settings\трус михаил петрович\мои документы\visual studio 2010\Projects\DataBinding\DataBinding\obj\x86\Debug\MainWindow.g.cs
+c:\documents and settings\трус михаил петрович\мои документы\visual studio 2010\Projects\DataBinding\DataBinding\obj\x86\Debug\App.g.cs
+c:\documents and settings\трус михаил петрович\мои документы\visual studio 2010\Projects\DataBinding\DataBinding\obj\x86\Debug\DataBinding_MarkupCompile.cache
+c:\documents and settings\трус михаил петрович\мои документы\visual studio 2010\Projects\DataBinding\DataBinding\obj\x86\Debug\DataBinding.g.resources
+c:\documents and settings\трус михаил петрович\мои документы\visual studio 2010\Projects\DataBinding\DataBinding\obj\x86\Debug\DataBinding.Properties.Resources.resources
+c:\documents and settings\трус михаил петрович\мои документы\visual studio 2010\Projects\DataBinding\DataBinding\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\documents and settings\трус михаил петрович\мои документы\visual studio 2010\Projects\DataBinding\DataBinding\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\documents and settings\трус михаил петрович\мои документы\visual studio 2010\Projects\DataBinding\DataBinding\obj\x86\Debug\DataBinding.exe
+c:\documents and settings\трус михаил петрович\мои документы\visual studio 2010\Projects\DataBinding\DataBinding\obj\x86\Debug\DataBinding.pdb
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\DataBinding\bin\Debug\IocKernel.dll
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\DataBinding\bin\Debug\SdspExportingInterface.dll
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\DataBinding\bin\Debug\SdspExportingServiceImplementation.dll
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\DataBinding\bin\Debug\SDSPPresenter.dll
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\DataBinding\bin\Debug\SDSPServiceImplementation.dll
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\DataBinding\bin\Debug\SDSPServiceInterface.dll
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\DataBinding\bin\Debug\IocKernel.pdb
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\DataBinding\bin\Debug\SdspExportingInterface.pdb
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\DataBinding\bin\Debug\SdspExportingServiceImplementation.pdb
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\DataBinding\bin\Debug\SDSPPresenter.pdb
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\DataBinding\bin\Debug\SDSPServiceImplementation.pdb
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\DataBinding\bin\Debug\SDSPServiceInterface.pdb
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\bin\Debug\DataBinding.exe.config
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\bin\Debug\DataBinding.exe
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\bin\Debug\DataBinding.pdb
+D:\Developer\SDSP\DataBinding\bin\Debug\DataBinding.exe.config
+D:\Developer\SDSP\DataBinding\bin\Debug\DataBinding.exe
+D:\Developer\SDSP\DataBinding\bin\Debug\DataBinding.pdb
+D:\Developer\SDSP\DataBinding\DataBinding\obj\x86\Debug\Themes\BureauBlack.baml
+D:\Developer\SDSP\DataBinding\DataBinding\obj\x86\Debug\Themes\BureauBlue.baml
+D:\Developer\SDSP\DataBinding\DataBinding\obj\x86\Debug\Themes\WhistlerBlue.baml
+D:\Developer\SDSP\DataBinding\DataBinding\obj\x86\Debug\App.baml
+D:\Developer\SDSP\DataBinding\DataBinding\obj\x86\Debug\MainWindow.g.cs
+D:\Developer\SDSP\DataBinding\DataBinding\obj\x86\Debug\App.g.cs
+D:\Developer\SDSP\DataBinding\DataBinding\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Developer\SDSP\DataBinding\DataBinding\obj\x86\Debug\DataBinding_MarkupCompile.cache
+D:\Developer\SDSP\DataBinding\DataBinding\obj\x86\Debug\DataBinding_MarkupCompile.lref
+D:\Developer\SDSP\DataBinding\DataBinding\obj\x86\Debug\MainWindow.baml
+D:\Developer\SDSP\DataBinding\DataBinding\obj\x86\Debug\Themes\TreeView.baml
+D:\Developer\SDSP\DataBinding\DataBinding\obj\x86\Debug\DataBinding.g.resources
+D:\Developer\SDSP\DataBinding\DataBinding\obj\x86\Debug\DataBinding.Properties.Resources.resources
+D:\Developer\SDSP\DataBinding\DataBinding\obj\x86\Debug\DataBinding.exe
+D:\Developer\SDSP\DataBinding\DataBinding\obj\x86\Debug\DataBinding.pdb
+d:\Developer\SDSP\DataBinding\DataBinding\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\Developer\SDSP\DataBinding\DataBinding\obj\x86\Debug\GenerateResource.read.1.tlog
+d:\Developer\SDSP\DataBinding\DataBinding\obj\x86\Debug\GenerateResource.write.1.tlog

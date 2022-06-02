@@ -1,0 +1,5 @@
+d:\Developer\SDSP\DataBinding\bin\Release\SDSPServiceInterface.dll
+d:\Developer\SDSP\DataBinding\SDSPServiceInterface\obj\Release\SDSPServiceInterface.dll
+d:\Developer\SDSP\DataBinding\SDSPServiceInterface\obj\Release\SDSPServiceInterface.pdb
+d:\Developer\SDSP\DataBinding\bin\Release\SDSPServiceInterface.pdb
+D:\Developer\SDSP\DataBinding\SDSPServiceInterface\obj\Release\SDSPServiceInterface.csprojResolveAssemblyReference.cache

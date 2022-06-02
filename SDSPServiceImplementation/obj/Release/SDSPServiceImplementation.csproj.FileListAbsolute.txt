@@ -1,0 +1,7 @@
+d:\Developer\SDSP\DataBinding\bin\Release\SDSPServiceImplementation.dll
+d:\Developer\SDSP\DataBinding\bin\Release\SDSPServiceImplementation.pdb
+d:\Developer\SDSP\DataBinding\SDSPServiceImplementation\obj\Release\SDSPServiceImplementation.Properties.Resources.resources
+d:\Developer\SDSP\DataBinding\SDSPServiceImplementation\obj\Release\SDSPServiceImplementation.dll
+d:\Developer\SDSP\DataBinding\SDSPServiceImplementation\obj\Release\SDSPServiceImplementation.pdb
+D:\Developer\SDSP\DataBinding\SDSPServiceImplementation\obj\Release\SDSPServiceImplementation.csprojResolveAssemblyReference.cache
+D:\Developer\SDSP\DataBinding\SDSPServiceImplementation\obj\Release\SDSPServiceImplementation.csproj.GenerateResource.Cache

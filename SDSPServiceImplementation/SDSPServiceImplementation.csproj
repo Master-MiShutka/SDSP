@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{72EA7E06-0AAD-44A5-9370-5CB2EA152CE8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SDSPServiceImplementation</RootNamespace>
+    <AssemblyName>SDSPServiceImplementation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatabaseModel\AskueEntities.cs" />
+    <Compile Include="DatabaseModel\CalcPoints.cs" />
+    <Compile Include="DatabaseModel\Channels.cs" />
+    <Compile Include="DatabaseModel\Collectors.cs" />
+    <Compile Include="DatabaseModel\Collectors_Statuses.cs" />
+    <Compile Include="DatabaseModel\Counters.cs" />
+    <Compile Include="DatabaseModel\Counters_Statuses.cs" />
+    <Compile Include="DatabaseModel\Counters_type.cs" />
+    <Compile Include="DatabaseModel\FES.cs" />
+    <Compile Include="DatabaseModel\Flats.cs" />
+    <Compile Include="DatabaseModel\Houses.cs" />
+    <Compile Include="DatabaseModel\Indications.cs" />
+    <Compile Include="DatabaseModel\Places.cs" />
+    <Compile Include="DatabaseModel\Profile.cs" />
+    <Compile Include="DatabaseModel\Regions.cs" />
+    <Compile Include="DatabaseModel\RES.cs" />
+    <Compile Include="DatabaseModel\Streets.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\Abstract.cs" />
+    <Compile Include="Repositories\SdspContainersRepositoryImp.cs" />
+    <Compile Include="Repositories\Converters.cs" />
+    <Compile Include="Repositories\DataEntities.cs" />
+    <Compile Include="Repositories\DepartamentsRepositoryImp.cs" />
+    <Compile Include="Repositories\ProfilesRepositoryImp.cs" />
+    <Compile Include="SdspServiceImp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SDSPServiceInterface\SDSPServiceInterface.csproj">
+      <Project>{17711E60-0C01-4152-90C2-CB22F2CE0BDB}</Project>
+      <Name>SDSPServiceInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DatabaseModel\AskueModel.csdl" />
+    <EmbeddedResource Include="DatabaseModel\AskueModel.msl" />
+    <EmbeddedResource Include="DatabaseModel\AskueModel.ssdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

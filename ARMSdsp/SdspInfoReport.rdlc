@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Textbox Name="StartDate">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!StartDate.Value, "DataSetSdspInfo")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>StartDate</rd:DefaultName>
+        <Top>8.43965cm</Top>
+        <Left>0.5cm</Left>
+        <Height>0.6cm</Height>
+        <Width>4.98708cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="EndDate">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!EndDate.Value, "DataSetSdspInfo")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>EndDate</rd:DefaultName>
+        <Top>8.43965cm</Top>
+        <Left>6.26729cm</Left>
+        <Height>0.6cm</Height>
+        <Width>5cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="ReportingDate">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!ReportingDate.Value, "DataSetSdspInfo")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>ReportingDate</rd:DefaultName>
+        <Top>7.66326cm</Top>
+        <Left>0.5cm</Left>
+        <Height>0.6cm</Height>
+        <Width>4.98708cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="ReportingSumm">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!ReportingSumm.Value, "DataSetSdspInfo")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>ReportingSumm</rd:DefaultName>
+        <Top>8.43965cm</Top>
+        <Left>16.10995cm</Left>
+        <Height>0.6cm</Height>
+        <Width>3.61125cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Subreport Name="Subreport1">
+        <ReportName>SdspContainer</ReportName>
+        <Top>4.85014cm</Top>
+        <Left>0.5cm</Left>
+        <Height>1.90264cm</Height>
+        <Width>9.77542cm</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Subreport>
+    </ReportItems>
+    <Height>4.00232in</Height>
+    <Style>
+      <Border>
+        <Style>None</Style>
+      </Border>
+    </Style>
+  </Body>
+  <Width>7.93652in</Width>
+  <Page>
+    <PageHeader>
+      <Height>1.47905cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox13">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Всего систем:</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox13</rd:DefaultName>
+          <Top>0.03175cm</Top>
+          <Left>0.5cm</Left>
+          <Height>0.6cm</Height>
+          <Width>2.5cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox17">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Всего счётчиков:</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox13</rd:DefaultName>
+          <Top>0.74323cm</Top>
+          <Left>0.5cm</Left>
+          <Height>0.6cm</Height>
+          <Width>3.00271cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox18">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>не работающих:</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox13</rd:DefaultName>
+          <Top>0.17851cm</Top>
+          <Left>5.17639cm</Left>
+          <Height>1.00597cm</Height>
+          <Width>2.32361cm</Width>
+          <ZIndex>2</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
+    <PageFooter>
+      <Height>7.54062cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="OverallTotalPages">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Globals!OverallTotalPages</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>OverallTotalPages</rd:DefaultName>
+          <Left>19cm</Left>
+          <Height>0.6cm</Height>
+          <Width>1cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox3">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>из</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox3</rd:DefaultName>
+          <Left>18.5cm</Left>
+          <Height>0.6cm</Height>
+          <Width>0.5cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="OverallPageNumber">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Globals!OverallPageNumber</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>OverallPageNumber</rd:DefaultName>
+          <Left>17.5cm</Left>
+          <Height>0.6cm</Height>
+          <Width>1cm</Width>
+          <ZIndex>2</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox6">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>вед.инженер отдела сбыта электроэнергии Трус Михаил Петрович</Value>
+                  <Style>
+                    <FontStyle>Italic</FontStyle>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox6</rd:DefaultName>
+          <Left>0.5cm</Left>
+          <Height>0.6cm</Height>
+          <Width>15cm</Width>
+          <ZIndex>3</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageFooter>
+    <PageHeight>21cm</PageHeight>
+    <PageWidth>29.7cm</PageWidth>
+    <LeftMargin>1.2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>1.2cm</TopMargin>
+    <BottomMargin>1.2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style>
+      <BackgroundImage>
+        <Source>Embedded</Source>
+        <Value>=IIf(Parameters!HideBg.Value=True, "", "background")</Value>
+        <MIMEType>image/png</MIMEType>
+        <BackgroundRepeat>Repeat</BackgroundRepeat>
+      </BackgroundImage>
+    </Style>
+  </Page>
+  <Author>вед. инженер ОСЭ ОЭС Трус Михаил Петрович</Author>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="SDSPServiceInterfaceEntities">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>8f979817-6b3d-43db-83cf-68e55c37383c</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSetSdspInfo">
+      <Query>
+        <DataSourceName>SDSPServiceInterfaceEntities</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="AccountPointsCount">
+          <DataField>AccountPointsCount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="AnsweringCountersCount">
+          <DataField>AnsweringCountersCount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="AnsweringModemsCount">
+          <DataField>AnsweringModemsCount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CountersCount">
+          <DataField>CountersCount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Departament">
+          <DataField>Departament</DataField>
+          <rd:TypeName>SDSPServiceInterface.Entities.Departament</rd:TypeName>
+        </Field>
+        <Field Name="EndDate">
+          <DataField>EndDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="ModemsCount">
+          <DataField>ModemsCount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NotAnsweringCountersCount">
+          <DataField>NotAnsweringCountersCount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NotAnsweringModemsCount">
+          <DataField>NotAnsweringModemsCount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="PreviousSumm">
+          <DataField>PreviousSumm</DataField>
+          <rd:TypeName>System.Single</rd:TypeName>
+        </Field>
+        <Field Name="ReportingDate">
+          <DataField>ReportingDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="ReportingSumm">
+          <DataField>ReportingSumm</DataField>
+          <rd:TypeName>System.Single</rd:TypeName>
+        </Field>
+        <Field Name="SdspContainers">
+          <DataField>SdspContainers</DataField>
+          <rd:TypeName>System.Collections.Generic.IEnumerable`1[[SDSPServiceInterface.Entities.SdspContainer, SDSPServiceInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]</rd:TypeName>
+        </Field>
+        <Field Name="StartDate">
+          <DataField>StartDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>SDSPServiceInterface.Entities</rd:DataSetName>
+        <rd:TableName>SdspInformation</rd:TableName>
+        <rd:ObjectDataSourceType>SDSPServiceInterface.Entities.SdspInformation, SDSPServiceInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="HideBg">
+      <DataType>Boolean</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>false</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <EmbeddedImages>
+    <EmbeddedImage Name="background">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <Language>ru-RU</Language>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>39794a46-aa16-43d7-81bc-7da57a03d41d</rd:ReportID>
+</Report>

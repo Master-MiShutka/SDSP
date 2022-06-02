@@ -1,0 +1,7 @@
+d:\Developer\SDSP\DataBinding\bin\Debug\ExcelWrapper.dll
+d:\Developer\SDSP\DataBinding\bin\Debug\ExcelWrapper.pdb
+d:\Developer\SDSP\DataBinding\ExcelWrapperDotNet\obj\Debug\ExcelWrapper.csproj.ResolveComReference.cache
+d:\Developer\SDSP\DataBinding\ExcelWrapperDotNet\obj\Debug\ExcelWrapper.dll
+d:\Developer\SDSP\DataBinding\ExcelWrapperDotNet\obj\Debug\ExcelWrapper.pdb
+D:\Developer\SDSP\DataBinding\ExcelWrapperDotNet\obj\Debug\ExcelWrapper.csprojResolveAssemblyReference.cache
+D:\Developer\SDSP\DataBinding\bin\Debug\ExcelWrapper.XML

@@ -1,0 +1,668 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AskueModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="AskueEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CalcPoints" EntityType="AskueModel.CalcPoints" />
+    <EntitySet Name="Channels" EntityType="AskueModel.Channels" />
+    <EntitySet Name="Channels_Type" EntityType="AskueModel.Channels_Type" />
+    <EntitySet Name="Collectors" EntityType="AskueModel.Collectors" />
+    <EntitySet Name="Collectors_Statuses" EntityType="AskueModel.Collectors_Statuses" />
+    <EntitySet Name="Collectors_Type" EntityType="AskueModel.Collectors_Type" />
+    <EntitySet Name="Counters" EntityType="AskueModel.Counters" />
+    <EntitySet Name="Counters_Statuses" EntityType="AskueModel.Counters_Statuses" />
+    <EntitySet Name="Counters_type" EntityType="AskueModel.Counters_type" />
+    <EntitySet Name="FES" EntityType="AskueModel.FES" />
+    <EntitySet Name="Flats" EntityType="AskueModel.Flats" />
+    <EntitySet Name="Houses" EntityType="AskueModel.Houses" />
+    <EntitySet Name="Indications" EntityType="AskueModel.Indications" />
+    <EntitySet Name="LinkTempObjects" EntityType="AskueModel.LinkTempObjects" />
+    <EntitySet Name="Manufacturer" EntityType="AskueModel.Manufacturer" />
+    <EntitySet Name="Places" EntityType="AskueModel.Places" />
+    <EntitySet Name="Profile" EntityType="AskueModel.Profile" />
+    <EntitySet Name="Regions" EntityType="AskueModel.Regions" />
+    <EntitySet Name="RES" EntityType="AskueModel.RES" />
+    <EntitySet Name="ServiceIndications" EntityType="AskueModel.ServiceIndications" />
+    <EntitySet Name="ServicePoints" EntityType="AskueModel.ServicePoints" />
+    <EntitySet Name="Streets" EntityType="AskueModel.Streets" />
+    <EntitySet Name="Templates" EntityType="AskueModel.Templates" />
+    <EntitySet Name="z_Monthes" EntityType="AskueModel.z_Monthes" />
+    <AssociationSet Name="fgn_key_CalcPointsCounters" Association="AskueModel.fgn_key_CalcPointsCounters">
+      <End Role="CalcPoints" EntitySet="CalcPoints" />
+      <End Role="Counters" EntitySet="Counters" />
+    </AssociationSet>
+    <AssociationSet Name="fgn_key_CalcPointsIndications" Association="AskueModel.fgn_key_CalcPointsIndications">
+      <End Role="CalcPoints" EntitySet="CalcPoints" />
+      <End Role="Indications" EntitySet="Indications" />
+    </AssociationSet>
+    <AssociationSet Name="fgn_key_CollectorsCalcPoints" Association="AskueModel.fgn_key_CollectorsCalcPoints">
+      <End Role="Collectors" EntitySet="Collectors" />
+      <End Role="CalcPoints" EntitySet="CalcPoints" />
+    </AssociationSet>
+    <AssociationSet Name="fgn_key_FlatsCalcPoints" Association="AskueModel.fgn_key_FlatsCalcPoints">
+      <End Role="Flats" EntitySet="Flats" />
+      <End Role="CalcPoints" EntitySet="CalcPoints" />
+    </AssociationSet>
+    <AssociationSet Name="fgn_key_Channels_TypeChannels" Association="AskueModel.fgn_key_Channels_TypeChannels">
+      <End Role="Channels_Type" EntitySet="Channels_Type" />
+      <End Role="Channels" EntitySet="Channels" />
+    </AssociationSet>
+    <AssociationSet Name="fgn_key_ChannelsCollectors" Association="AskueModel.fgn_key_ChannelsCollectors">
+      <End Role="Channels" EntitySet="Channels" />
+      <End Role="Collectors" EntitySet="Collectors" />
+    </AssociationSet>
+    <AssociationSet Name="fgn_key_Collectors_TypeCollectors" Association="AskueModel.fgn_key_Collectors_TypeCollectors">
+      <End Role="Collectors_Type" EntitySet="Collectors_Type" />
+      <End Role="Collectors" EntitySet="Collectors" />
+    </AssociationSet>
+    <AssociationSet Name="fgn_key_CollectorsCollectors_Statuses" Association="AskueModel.fgn_key_CollectorsCollectors_Statuses">
+      <End Role="Collectors" EntitySet="Collectors" />
+      <End Role="Collectors_Statuses" EntitySet="Collectors_Statuses" />
+    </AssociationSet>
+    <AssociationSet Name="fgn_key_ManufacturerCollectors_Type" Association="AskueModel.fgn_key_ManufacturerCollectors_Type">
+      <End Role="Manufacturer" EntitySet="Manufacturer" />
+      <End Role="Collectors_Type" EntitySet="Collectors_Type" />
+    </AssociationSet>
+    <AssociationSet Name="fgn_key_Counters_typeCounters" Association="AskueModel.fgn_key_Counters_typeCounters">
+      <End Role="Counters_type" EntitySet="Counters_type" />
+      <End Role="Counters" EntitySet="Counters" />
+    </AssociationSet>
+    <AssociationSet Name="fgn_key_CountersCounters_Statuses" Association="AskueModel.fgn_key_CountersCounters_Statuses">
+      <End Role="Counters" EntitySet="Counters" />
+      <End Role="Counters_Statuses" EntitySet="Counters_Statuses" />
+    </AssociationSet>
+    <AssociationSet Name="fgn_key_FESRES" Association="AskueModel.fgn_key_FESRES">
+      <End Role="FES" EntitySet="FES" />
+      <End Role="RES" EntitySet="RES" />
+    </AssociationSet>
+    <AssociationSet Name="fgn_key_RegionFES" Association="AskueModel.fgn_key_RegionFES">
+      <End Role="Regions" EntitySet="Regions" />
+      <End Role="FES" EntitySet="FES" />
+    </AssociationSet>
+    <AssociationSet Name="fgn_key_HousesFlats" Association="AskueModel.fgn_key_HousesFlats">
+      <End Role="Houses" EntitySet="Houses" />
+      <End Role="Flats" EntitySet="Flats" />
+    </AssociationSet>
+    <AssociationSet Name="fgn_key_StreetsHouses" Association="AskueModel.fgn_key_StreetsHouses">
+      <End Role="Streets" EntitySet="Streets" />
+      <End Role="Houses" EntitySet="Houses" />
+    </AssociationSet>
+    <AssociationSet Name="fgn_key_ProfileIndications" Association="AskueModel.fgn_key_ProfileIndications">
+      <End Role="Profile" EntitySet="Profile" />
+      <End Role="Indications" EntitySet="Indications" />
+    </AssociationSet>
+    <AssociationSet Name="fgn_key_TemplatesLinkTempObjects" Association="AskueModel.fgn_key_TemplatesLinkTempObjects">
+      <End Role="Templates" EntitySet="Templates" />
+      <End Role="LinkTempObjects" EntitySet="LinkTempObjects" />
+    </AssociationSet>
+    <AssociationSet Name="fgn_key_PlacesStreets" Association="AskueModel.fgn_key_PlacesStreets">
+      <End Role="Places" EntitySet="Places" />
+      <End Role="Streets" EntitySet="Streets" />
+    </AssociationSet>
+    <AssociationSet Name="fgn_key_RESPlaces" Association="AskueModel.fgn_key_RESPlaces">
+      <End Role="RES" EntitySet="RES" />
+      <End Role="Places" EntitySet="Places" />
+    </AssociationSet>
+    <AssociationSet Name="fgn_key_ProfileTemplates" Association="AskueModel.fgn_key_ProfileTemplates">
+      <End Role="Profile" EntitySet="Profile" />
+      <End Role="Templates" EntitySet="Templates" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CalcPoints">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Collector_id" Type="Int32" />
+    <Property Name="Flat_id" Type="Int32" />
+    <Property Name="Personal_acc" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Counters" Relationship="AskueModel.fgn_key_CalcPointsCounters" FromRole="CalcPoints" ToRole="Counters" />
+    <NavigationProperty Name="Indications" Relationship="AskueModel.fgn_key_CalcPointsIndications" FromRole="CalcPoints" ToRole="Indications" />
+    <NavigationProperty Name="Collectors" Relationship="AskueModel.fgn_key_CollectorsCalcPoints" FromRole="CalcPoints" ToRole="Collectors" />
+    <NavigationProperty Name="Flats" Relationship="AskueModel.fgn_key_FlatsCalcPoints" FromRole="CalcPoints" ToRole="Flats" />
+  </EntityType>
+  <EntityType Name="Channels">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Type_ID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Channels_Type" Relationship="AskueModel.fgn_key_Channels_TypeChannels" FromRole="Channels" ToRole="Channels_Type" />
+    <NavigationProperty Name="Collectors" Relationship="AskueModel.fgn_key_ChannelsCollectors" FromRole="Channels" ToRole="Collectors" />
+  </EntityType>
+  <EntityType Name="Channels_Type">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Channels" Relationship="AskueModel.fgn_key_Channels_TypeChannels" FromRole="Channels_Type" ToRole="Channels" />
+  </EntityType>
+  <EntityType Name="Collectors">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Collectors_Type_ID" Type="Int32" />
+    <Property Name="Channel_ID" Type="Int32" />
+    <Property Name="Collectors_ID" Type="Int32" />
+    <Property Name="NetAdress" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CalcPoints" Relationship="AskueModel.fgn_key_CollectorsCalcPoints" FromRole="Collectors" ToRole="CalcPoints" />
+    <NavigationProperty Name="Channels" Relationship="AskueModel.fgn_key_ChannelsCollectors" FromRole="Collectors" ToRole="Channels" />
+    <NavigationProperty Name="Collectors_Type" Relationship="AskueModel.fgn_key_Collectors_TypeCollectors" FromRole="Collectors" ToRole="Collectors_Type" />
+    <NavigationProperty Name="Collectors_Statuses" Relationship="AskueModel.fgn_key_CollectorsCollectors_Statuses" FromRole="Collectors" ToRole="Collectors_Statuses" />
+  </EntityType>
+  <EntityType Name="Collectors_Statuses">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Collector_id" Type="Int32" />
+    <Property Name="code" Type="Int32" />
+    <Property Name="time" Type="DateTime" />
+    <NavigationProperty Name="Collectors" Relationship="AskueModel.fgn_key_CollectorsCollectors_Statuses" FromRole="Collectors_Statuses" ToRole="Collectors" />
+  </EntityType>
+  <EntityType Name="Collectors_Type">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Manufacturer_ID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Collectors" Relationship="AskueModel.fgn_key_Collectors_TypeCollectors" FromRole="Collectors_Type" ToRole="Collectors" />
+    <NavigationProperty Name="Manufacturer" Relationship="AskueModel.fgn_key_ManufacturerCollectors_Type" FromRole="Collectors_Type" ToRole="Manufacturer" />
+  </EntityType>
+  <EntityType Name="Counters">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="CalcPoint_ID" Type="Int32" />
+    <Property Name="Type_ID" Type="Int32" />
+    <Property Name="Serial" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Balance" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NetAdress" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CalcPoints" Relationship="AskueModel.fgn_key_CalcPointsCounters" FromRole="Counters" ToRole="CalcPoints" />
+    <NavigationProperty Name="Counters_type" Relationship="AskueModel.fgn_key_Counters_typeCounters" FromRole="Counters" ToRole="Counters_type" />
+    <NavigationProperty Name="Counters_Statuses" Relationship="AskueModel.fgn_key_CountersCounters_Statuses" FromRole="Counters" ToRole="Counters_Statuses" />
+  </EntityType>
+  <EntityType Name="Counters_Statuses">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Counter_id" Type="Int32" />
+    <Property Name="code" Type="Int32" />
+    <NavigationProperty Name="Counters" Relationship="AskueModel.fgn_key_CountersCounters_Statuses" FromRole="Counters_Statuses" ToRole="Counters" />
+  </EntityType>
+  <EntityType Name="Counters_type">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Manufacturer_ID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Counters" Relationship="AskueModel.fgn_key_Counters_typeCounters" FromRole="Counters_type" ToRole="Counters" />
+  </EntityType>
+  <EntityType Name="FES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Region_ID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="RES" Relationship="AskueModel.fgn_key_FESRES" FromRole="FES" ToRole="RES" />
+    <NavigationProperty Name="Regions" Relationship="AskueModel.fgn_key_RegionFES" FromRole="FES" ToRole="Regions" />
+  </EntityType>
+  <EntityType Name="Flats">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="House_ID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CalcPoints" Relationship="AskueModel.fgn_key_FlatsCalcPoints" FromRole="Flats" ToRole="CalcPoints" />
+    <NavigationProperty Name="Houses" Relationship="AskueModel.fgn_key_HousesFlats" FromRole="Flats" ToRole="Houses" />
+  </EntityType>
+  <EntityType Name="Houses">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Street_ID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Flats" Relationship="AskueModel.fgn_key_HousesFlats" FromRole="Houses" ToRole="Flats" />
+    <NavigationProperty Name="Streets" Relationship="AskueModel.fgn_key_StreetsHouses" FromRole="Houses" ToRole="Streets" />
+  </EntityType>
+  <EntityType Name="Indications">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="CalcPoint_ID" Type="Int32" />
+    <Property Name="Profile_ID" Type="Int32" />
+    <Property Name="Ts" Type="DateTime" />
+    <Property Name="Tr0" Type="Single" />
+    <Property Name="Tr1" Type="Single" />
+    <Property Name="Tr2" Type="Single" />
+    <Property Name="Tr3" Type="Single" />
+    <Property Name="Tr4" Type="Single" />
+    <Property Name="Da" Type="Int32" />
+    <NavigationProperty Name="CalcPoints" Relationship="AskueModel.fgn_key_CalcPointsIndications" FromRole="Indications" ToRole="CalcPoints" />
+    <NavigationProperty Name="Profile" Relationship="AskueModel.fgn_key_ProfileIndications" FromRole="Indications" ToRole="Profile" />
+  </EntityType>
+  <EntityType Name="LinkTempObjects">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Template_id" Type="Int32" Nullable="false" />
+    <Property Name="Region_id" Type="Int32" />
+    <Property Name="Fes_id" Type="Int32" />
+    <Property Name="Res_id" Type="Int32" />
+    <Property Name="Place_id" Type="Int32" />
+    <Property Name="Street_id" Type="Int32" />
+    <Property Name="House_id" Type="Int32" />
+    <Property Name="Collector_id" Type="Int32" />
+    <Property Name="Flat_id" Type="Int32" />
+    <NavigationProperty Name="Templates" Relationship="AskueModel.fgn_key_TemplatesLinkTempObjects" FromRole="LinkTempObjects" ToRole="Templates" />
+  </EntityType>
+  <EntityType Name="Manufacturer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Collectors_Type" Relationship="AskueModel.fgn_key_ManufacturerCollectors_Type" FromRole="Manufacturer" ToRole="Collectors_Type" />
+  </EntityType>
+  <EntityType Name="Places">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Res_ID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Streets" Relationship="AskueModel.fgn_key_PlacesStreets" FromRole="Places" ToRole="Streets" />
+    <NavigationProperty Name="RES" Relationship="AskueModel.fgn_key_RESPlaces" FromRole="Places" ToRole="RES" />
+  </EntityType>
+  <EntityType Name="Profile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Indications" Relationship="AskueModel.fgn_key_ProfileIndications" FromRole="Profile" ToRole="Indications" />
+    <NavigationProperty Name="Templates" Relationship="AskueModel.fgn_key_ProfileTemplates" FromRole="Profile" ToRole="Templates" />
+  </EntityType>
+  <EntityType Name="Regions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="FES" Relationship="AskueModel.fgn_key_RegionFES" FromRole="Regions" ToRole="FES" />
+  </EntityType>
+  <EntityType Name="RES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Fes_ID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="FES" Relationship="AskueModel.fgn_key_FESRES" FromRole="RES" ToRole="FES" />
+    <NavigationProperty Name="Places" Relationship="AskueModel.fgn_key_RESPlaces" FromRole="RES" ToRole="Places" />
+  </EntityType>
+  <EntityType Name="ServiceIndications">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Source_Point" Type="Int32" Nullable="false" />
+    <Property Name="Flag_Load" Type="Int32" Nullable="false" />
+    <Property Name="Ts" Type="DateTime" />
+    <Property Name="Tr0" Type="Single" />
+    <Property Name="Tr1" Type="Single" />
+    <Property Name="Tr2" Type="Single" />
+    <Property Name="Tr3" Type="Single" />
+    <Property Name="Tr4" Type="Single" />
+    <Property Name="Da" Type="Int32" />
+    <Property Name="Profile_ID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ServicePoints">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Source_Point" Type="Int32" Nullable="false" />
+    <Property Name="Id_current_Points_Base" Type="Int32" Nullable="false" />
+    <Property Name="Flag_Load" Type="Int32" Nullable="false" />
+    <Property Name="POINT_SN" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="POINT_METER" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="POINT_NAME" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="POINT_REGION" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="POINT_PLACE" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="POINT_ENTERPRISE" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="POINT_BRANCH" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="POINT_STREET" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="POINT_BUILDING" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="POINT_ADDRESSNUMBER" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="POINT_SUBSCRIBERTYPE_ID" Type="Int32" />
+    <Property Name="POINT_SUBSCRIBERTYPE" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="POINT_TYPE_ID" Type="Int32" />
+    <Property Name="POINT_TYPE" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="POINT_SOURCETYPE_ID" Type="Int32" />
+    <Property Name="POINT_SOURCETYPE" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="POINT_VERIFICATION_DATE" Type="DateTime" />
+    <Property Name="POINT_VERIFICATION_INTERVAL" Type="Int32" />
+    <Property Name="TYPE" Type="String" Nullable="false" MaxLength="16" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Streets">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Place_ID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Houses" Relationship="AskueModel.fgn_key_StreetsHouses" FromRole="Streets" ToRole="Houses" />
+    <NavigationProperty Name="Places" Relationship="AskueModel.fgn_key_PlacesStreets" FromRole="Streets" ToRole="Places" />
+  </EntityType>
+  <EntityType Name="Templates">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Period" Type="Int32" />
+    <Property Name="Profile_id" Type="Int32" />
+    <Property Name="Begin_Time" Type="DateTime" />
+    <NavigationProperty Name="LinkTempObjects" Relationship="AskueModel.fgn_key_TemplatesLinkTempObjects" FromRole="Templates" ToRole="LinkTempObjects" />
+    <NavigationProperty Name="Profile" Relationship="AskueModel.fgn_key_ProfileTemplates" FromRole="Templates" ToRole="Profile" />
+  </EntityType>
+  <EntityType Name="z_Monthes">
+    <Key>
+      <PropertyRef Name="PKEY" />
+    </Key>
+    <Property Name="PKEY" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int16" />
+    <Property Name="Month" Type="Int16" />
+  </EntityType>
+  <Association Name="fgn_key_CalcPointsCounters">
+    <End Role="CalcPoints" Type="AskueModel.CalcPoints" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Counters" Type="AskueModel.Counters" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CalcPoints">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Counters">
+        <PropertyRef Name="CalcPoint_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fgn_key_CalcPointsIndications">
+    <End Role="CalcPoints" Type="AskueModel.CalcPoints" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Indications" Type="AskueModel.Indications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CalcPoints">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Indications">
+        <PropertyRef Name="CalcPoint_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fgn_key_CollectorsCalcPoints">
+    <End Role="Collectors" Type="AskueModel.Collectors" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CalcPoints" Type="AskueModel.CalcPoints" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Collectors">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CalcPoints">
+        <PropertyRef Name="Collector_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fgn_key_FlatsCalcPoints">
+    <End Role="Flats" Type="AskueModel.Flats" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CalcPoints" Type="AskueModel.CalcPoints" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Flats">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CalcPoints">
+        <PropertyRef Name="Flat_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fgn_key_Channels_TypeChannels">
+    <End Role="Channels_Type" Type="AskueModel.Channels_Type" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Channels" Type="AskueModel.Channels" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Channels_Type">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Channels">
+        <PropertyRef Name="Type_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fgn_key_ChannelsCollectors">
+    <End Role="Channels" Type="AskueModel.Channels" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Collectors" Type="AskueModel.Collectors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Channels">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Collectors">
+        <PropertyRef Name="Channel_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fgn_key_Collectors_TypeCollectors">
+    <End Role="Collectors_Type" Type="AskueModel.Collectors_Type" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Collectors" Type="AskueModel.Collectors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Collectors_Type">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Collectors">
+        <PropertyRef Name="Collectors_Type_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fgn_key_CollectorsCollectors_Statuses">
+    <End Role="Collectors" Type="AskueModel.Collectors" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Collectors_Statuses" Type="AskueModel.Collectors_Statuses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Collectors">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Collectors_Statuses">
+        <PropertyRef Name="Collector_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fgn_key_ManufacturerCollectors_Type">
+    <End Role="Manufacturer" Type="AskueModel.Manufacturer" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Collectors_Type" Type="AskueModel.Collectors_Type" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Manufacturer">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Collectors_Type">
+        <PropertyRef Name="Manufacturer_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fgn_key_Counters_typeCounters">
+    <End Role="Counters_type" Type="AskueModel.Counters_type" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Counters" Type="AskueModel.Counters" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Counters_type">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Counters">
+        <PropertyRef Name="Type_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fgn_key_CountersCounters_Statuses">
+    <End Role="Counters" Type="AskueModel.Counters" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Counters_Statuses" Type="AskueModel.Counters_Statuses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Counters">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Counters_Statuses">
+        <PropertyRef Name="Counter_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fgn_key_FESRES">
+    <End Role="FES" Type="AskueModel.FES" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="RES" Type="AskueModel.RES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FES">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RES">
+        <PropertyRef Name="Fes_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fgn_key_RegionFES">
+    <End Role="Regions" Type="AskueModel.Regions" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="FES" Type="AskueModel.FES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Regions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FES">
+        <PropertyRef Name="Region_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fgn_key_HousesFlats">
+    <End Role="Houses" Type="AskueModel.Houses" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Flats" Type="AskueModel.Flats" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Houses">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Flats">
+        <PropertyRef Name="House_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fgn_key_StreetsHouses">
+    <End Role="Streets" Type="AskueModel.Streets" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Houses" Type="AskueModel.Houses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Streets">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Houses">
+        <PropertyRef Name="Street_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fgn_key_ProfileIndications">
+    <End Role="Profile" Type="AskueModel.Profile" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Indications" Type="AskueModel.Indications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Profile">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Indications">
+        <PropertyRef Name="Profile_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fgn_key_TemplatesLinkTempObjects">
+    <End Role="Templates" Type="AskueModel.Templates" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="LinkTempObjects" Type="AskueModel.LinkTempObjects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Templates">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="LinkTempObjects">
+        <PropertyRef Name="Template_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fgn_key_PlacesStreets">
+    <End Role="Places" Type="AskueModel.Places" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Streets" Type="AskueModel.Streets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Places">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Streets">
+        <PropertyRef Name="Place_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fgn_key_RESPlaces">
+    <End Role="RES" Type="AskueModel.RES" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Places" Type="AskueModel.Places" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RES">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Places">
+        <PropertyRef Name="Res_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fgn_key_ProfileTemplates">
+    <End Role="Profile" Type="AskueModel.Profile" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Templates" Type="AskueModel.Templates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Profile">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Templates">
+        <PropertyRef Name="Profile_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    mc:Ignorable="d">
+    <ResourceDictionary.MergedDictionaries>
+
+        <ResourceDictionary Source="/GUIControls;component/Styles/Common.xaml" />
+        <ResourceDictionary Source="/GUIControls;component/Styles/GridSplitter.xaml" />
+        <ResourceDictionary Source="/GUIControls;component/Styles/TextBox.xaml" />
+        <ResourceDictionary Source="/GUIControls;component/Styles/CustomSplitter.xaml" />
+
+        <ResourceDictionary Source="/GUIControls;component/Styles/TextBlockStyles.xaml" />
+
+        <ResourceDictionary Source="/GUIControls;component/Themes/Generic/Common.xaml" />
+        <ResourceDictionary Source="/GUIControls;component/Themes/Generic/Glyphs.xaml" />
+
+        <ResourceDictionary Source="/GUIControls;component/Themes/TreeViewWithRowSelect.xaml" />
+        <ResourceDictionary Source="/GUIControls;component/Themes/ComboBoxWithTreeView.xaml" />
+
+        <ResourceDictionary Source="/GUIControls;component/ButtonSpinner/Themes/Generic.xaml" />
+        <ResourceDictionary Source="/GUIControls;component/Themes/CalendarStyle.xaml" />
+        <ResourceDictionary Source="/GUIControls;component/NumericUpDown/Themes/Generic.xaml" />
+        <ResourceDictionary Source="/GUIControls;component/WatermarkTextBox/Themes/Generic.xaml" />
+
+        <ResourceDictionary Source="/GUIControls;component/Themes/DbSettings.xaml" />
+        <ResourceDictionary Source="/GUIControls;component/Themes/DropDownButton.xaml" />
+
+    </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>

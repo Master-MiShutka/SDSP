@@ -1,0 +1,9 @@
+d:\Developer\SDSP\DataBinding\bin\Release\Shared.dll
+d:\Developer\SDSP\DataBinding\bin\Release\Shared.pdb
+d:\Developer\SDSP\DataBinding\Shared\obj\Release\Shared.g.resources
+d:\Developer\SDSP\DataBinding\Shared\obj\Release\Shared.dll
+d:\Developer\SDSP\DataBinding\Shared\obj\Release\Shared.pdb
+D:\Developer\SDSP\DataBinding\bin\Release\ClosedXML.dll
+D:\Developer\SDSP\DataBinding\bin\Release\ClosedXML.XML
+D:\Developer\SDSP\DataBinding\bin\Release\DocumentFormat.OpenXml.dll
+D:\Developer\SDSP\DataBinding\Shared\obj\Release\Shared.csprojResolveAssemblyReference.cache

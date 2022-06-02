@@ -1,0 +1,25 @@
+D:\Developer\SDSP\WpfApplication1\bin\Debug\SDSPPresenter.dll
+D:\Developer\SDSP\WpfApplication1\bin\Debug\SDSPPresenter.pdb
+D:\Developer\SDSP\WpfApplication1\SDSPPresenter\obj\Debug\SDSPPresenter.csprojResolveAssemblyReference.cache
+D:\Developer\SDSP\WpfApplication1\SDSPPresenter\obj\Debug\SDSPPresenter.dll
+D:\Developer\SDSP\WpfApplication1\SDSPPresenter\obj\Debug\SDSPPresenter.pdb
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\bin\Debug\SDSPPresenter.dll
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\bin\Debug\SDSPPresenter.pdb
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\SDSPPresenter\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\SDSPPresenter\obj\Debug\SDSPPresenter.dll
+C:\Documents and Settings\Трус Михаил Петрович\Мои документы\Visual Studio 2010\Projects\DataBinding\SDSPPresenter\obj\Debug\SDSPPresenter.pdb
+b:\Developer\SDSP\DataBinding\bin\Debug\SDSPPresenter.dll
+b:\Developer\SDSP\DataBinding\bin\Debug\SDSPPresenter.pdb
+b:\Developer\SDSP\DataBinding\SDSPPresenter\obj\Debug\ResolveAssemblyReference.cache
+b:\Developer\SDSP\DataBinding\SDSPPresenter\obj\Debug\SDSPPresenter.dll
+b:\Developer\SDSP\DataBinding\SDSPPresenter\obj\Debug\SDSPPresenter.pdb
+d:\Developer\SDSP\DataBinding\bin\Debug\SDSPPresenter.dll
+d:\Developer\SDSP\DataBinding\bin\Debug\SDSPPresenter.pdb
+d:\Developer\SDSP\DataBinding\SDSPPresenter\obj\Debug\SDSPPresenter.dll
+d:\Developer\SDSP\DataBinding\SDSPPresenter\obj\Debug\SDSPPresenter.pdb
+D:\Developer\SDSP\DataBinding\SDSPPresenter\obj\Debug\ResolveAssemblyReference.cache
+z:\Developer\SDSP\bin\Debug\SDSPPresenter.dll
+z:\Developer\SDSP\bin\Debug\SDSPPresenter.pdb
+z:\Developer\SDSP\SDSPPresenter\obj\Debug\SDSPPresenter.csprojResolveAssemblyReference.cache
+z:\Developer\SDSP\SDSPPresenter\obj\Debug\SDSPPresenter.dll
+z:\Developer\SDSP\SDSPPresenter\obj\Debug\SDSPPresenter.pdb

@@ -1,0 +1,16 @@
+d:\Developer\SDSP\DataBinding\bin\Release\TestApp.exe.config
+d:\Developer\SDSP\DataBinding\bin\Release\TestApp.exe
+d:\Developer\SDSP\DataBinding\bin\Release\TestApp.pdb
+d:\Developer\SDSP\DataBinding\TestApp\obj\x86\Release\App.baml
+d:\Developer\SDSP\DataBinding\TestApp\obj\x86\Release\MainWindow.g.cs
+d:\Developer\SDSP\DataBinding\TestApp\obj\x86\Release\App.g.cs
+d:\Developer\SDSP\DataBinding\TestApp\obj\x86\Release\GeneratedInternalTypeHelper.g.cs
+d:\Developer\SDSP\DataBinding\TestApp\obj\x86\Release\TestApp_MarkupCompile.cache
+d:\Developer\SDSP\DataBinding\TestApp\obj\x86\Release\TestApp_MarkupCompile.lref
+d:\Developer\SDSP\DataBinding\TestApp\obj\x86\Release\MainWindow.baml
+d:\Developer\SDSP\DataBinding\TestApp\obj\x86\Release\TestApp.g.resources
+d:\Developer\SDSP\DataBinding\TestApp\obj\x86\Release\TestApp.Properties.Resources.resources
+d:\Developer\SDSP\DataBinding\TestApp\obj\x86\Release\TestApp.exe
+d:\Developer\SDSP\DataBinding\TestApp\obj\x86\Release\TestApp.pdb
+D:\Developer\SDSP\DataBinding\TestApp\obj\x86\Release\TestApp.csprojResolveAssemblyReference.cache
+D:\Developer\SDSP\DataBinding\TestApp\obj\x86\Release\TestApp.csproj.GenerateResource.Cache

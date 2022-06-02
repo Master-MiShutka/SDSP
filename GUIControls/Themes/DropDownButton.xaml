@@ -1,0 +1,81 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:conv="clr-namespace:GUIControls.Core.Converters"
+                    xmlns:local="clr-namespace:GUIControls"
+                    xmlns:themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/GUIControls;component/Themes/Generic/Common.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <conv:InverseBoolConverter x:Key="InverseBoolConverter" />
+    <conv:ObjectToVisiblityConverter x:Key="ObjectToVisiblityConverter" />
+
+    <Style TargetType="{x:Type local:DropDownButton}">
+        <Setter Property="IsTabStop" Value="True" />
+        <Setter Property="Padding" Value="5 0" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:DropDownButton}">
+                    <Grid x:Name="MainGrid" SnapsToDevicePixels="True">
+                        <ToggleButton x:Name="PART_DropDownButton" HorizontalContentAlignment="Stretch" IsChecked="{Binding IsOpen, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}" IsHitTestVisible="{Binding IsOpen, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource InverseBoolConverter}}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0"
+                                           Margin="{TemplateBinding Padding}"
+                                           HorizontalAlignment="Left"
+                                           Text="{Binding Text,
+                                                          RelativeSource={RelativeSource TemplatedParent},
+                                                          Mode=OneWay}"
+                                           TextAlignment="Left" />
+                                <Grid x:Name="arrowGlyph" Grid.Column="1" Margin="4,3,4,3" IsHitTestVisible="False">
+                                    <Path x:Name="Arrow"
+                                          Width="7"
+                                          Height="4"
+                                          Data="M 0 0 L 3.5 4 L 7 0 Z"
+                                          Fill="#FF000000" />
+                                </Grid>
+                            </Grid>
+                        </ToggleButton>
+
+                        <Popup x:Name="PART_Popup"
+                               MinWidth="{TemplateBinding Width}"
+                               AllowsTransparency="True"
+                               Focusable="False"
+                               HorizontalOffset="1"
+                               IsOpen="{Binding IsChecked,
+                                                ElementName=PART_DropDownButton}"
+                               Placement="Bottom"
+                               StaysOpen="False"
+                               VerticalOffset="0">
+                            <themes:SystemDropShadowChrome Margin="2">
+                                <Border Background="{StaticResource PopupBackgroundBrush}" BorderBrush="{StaticResource PopupDarkBorderBrush}" BorderThickness="1">
+                                    <StackPanel>
+                                        <TextBlock Margin="10 5"
+                                                   FontStyle="Italic"
+                                                   FontWeight="Light"
+                                                   TextAlignment="Center"
+                                                   Visibility="{Binding DropDownContent,
+                                                                        RelativeSource={RelativeSource TemplatedParent},
+                                                                        Converter={StaticResource ObjectToVisiblityConverter}}">
+                                            нет данных для отображения
+                                        </TextBlock>
+                                        <ContentPresenter x:Name="PART_ContentPresenter" Content="{TemplateBinding DropDownContent}" />
+                                    </StackPanel>
+                                </Border>
+                            </themes:SystemDropShadowChrome>
+                        </Popup>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="Arrow" Property="Fill" Value="#AFAFAF" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

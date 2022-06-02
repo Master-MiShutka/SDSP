@@ -1,0 +1,80 @@
+﻿<Window x:Class="TestApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:TestApp"
+        xmlns:my="clr-namespace:GUIControls;assembly=GUIControls"
+        xmlns:properties="clr-namespace:TestApp.Properties"
+        xmlns:tree="clr-namespace:GUIControls.Tree;assembly=GUIControls"
+        Title="MainWindow"
+        Width="887"
+        Height="489">
+    <Window.Resources>
+        <properties:Settings x:Key="Settings" />
+
+
+
+    </Window.Resources>
+    <Grid>
+        <my:DropDownButton Name="dropDownButton1"
+                           Width="345"
+                           Height="20"
+                           Margin="12,12,0,0"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top" />
+        <my:DbSettings Name="dbSettings1"
+                       Margin="378,38,0,0"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       DataContext="{Binding Source={StaticResource Settings}}"
+                       ToolTip="Настройки подключения" />
+        <ComboBox Name="comboBox1"
+                  Width="308"
+                  Height="28"
+                  Margin="12,38,0,0"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top" />
+        <Calendar Name="calendar1"
+                  Width="205"
+                  Height="172"
+                  Margin="428,12,0,0"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top"
+                  Style="{StaticResource MyCalendarStyle}" />
+        <tree:ComboBoxWithTreeView Name="comboBoxWithTreeView1"
+                                   Width="120"
+                                   Height="23"
+                                   Margin="12,72,0,0"
+                                   HorizontalAlignment="Left"
+                                   VerticalAlignment="Top" />
+        <tree:TreeViewWithRowSelect Width="332"
+                                    Height="312"
+                                    Margin="49,114,0,0"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Style="{StaticResource TreeViewWithRowSelectStyle}">
+            <TreeViewItem Header="Первый" IsExpanded="True">
+                <TreeViewItem Header="Первый 1" />
+                <TreeViewItem Header="Первый 2" IsExpanded="True">
+                    <TreeViewItem Header="Один" />
+                    <TreeViewItem Header="Два" />
+                    <TreeViewItem Header="Три" />
+                </TreeViewItem>
+                <TreeViewItem Header="Первый с длинннннннннннным названием" />
+                <TreeViewItem Header="Первый 4" />
+            </TreeViewItem>
+            <TreeViewItem Header="Второй" />
+            <TreeViewItem Header="Третий" IsExpanded="True">
+                <TreeViewItem Header="Один" />
+                <TreeViewItem Header="Два" />
+                <TreeViewItem Header="Три" IsExpanded="True">
+                    <TreeViewItem Header="Три" />
+                    <TreeViewItem Header="Дваааааааааааааааааааааааааааааа" />
+                    <TreeViewItem Header="Один" />
+                </TreeViewItem>
+                <TreeViewItem Header="Четыре" />
+            </TreeViewItem>
+        </tree:TreeViewWithRowSelect>
+        <Button Content="Button" Height="30" HorizontalAlignment="Left" Margin="466,219,0,0" Name="button1" VerticalAlignment="Top" Width="130" Click="button1_Click" />
+        <Button Content="Button" Height="36" HorizontalAlignment="Left" Margin="466,270,0,0" Name="button2" VerticalAlignment="Top" Width="134" />
+    </Grid>
+</Window>
